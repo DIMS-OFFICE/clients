@@ -1,0 +1,51 @@
+		#upload_container {
+			margin:0 auto;
+			text-align: center;
+			background: radial-gradient(white, lightgrey);
+			padding-top: 15px;
+			padding-bottom: 10px;
+			width: 420px;
+			border-radius: 10px;
+			box-shadow: 0 0 0 60px rgb(0 0 0 / 0%) inset, 0.1em 0.1em 0.2em darkslategrey;
+		}
+
+		#uploadForm {
+			margin-top: 15px;
+		}
+		
+		#close_btn {
+			cursor:pointer;
+		}
+
+		#progressBar {
+			width: 0%;
+		    background: red;
+		    height: 10px;
+		    margin-left: 5%;
+		}
+
+		#percent {
+			margin-top: 5px;
+		}
+
+		#uploadImage {
+			border: 1px solid black;
+		}
+
+		#submitButton {
+			height: 23px;
+			cursor: pointer;
+		}
+
+		.close_btn {
+			position: absolute;
+			right: 5px;
+			top: 12px;
+			width: 30px;
+			cursor: pointer;
+		}
+		
+		#error_msg {
+			color: red;
+			font-weight: bold;
+		}

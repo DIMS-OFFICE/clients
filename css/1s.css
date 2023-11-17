@@ -1,0 +1,141 @@
+		html {
+	        background: url(../img/bg1.jpg) no-repeat center center fixed;
+	        -webkit-background-size: cover;
+	        -moz-background-size: cover;
+	        -o-background-size: cover;
+	        background-size: cover;
+		}
+
+		#main_div {
+			width:100%;
+		}
+
+		#header_txt {
+			font-size:20px;
+			margin:0 auto;
+		}
+
+		#preview_div {
+			margin:10 auto;
+			width:1000px;
+			height:500px;
+			overflow:auto;
+			text-align:center;
+		}
+
+		#preview_tbl {
+			margin: 10px auto;
+    		border-collapse: collapse;
+		}
+
+		#preview_tbl td {
+			border: 1px solid lightgray;
+			background: white;
+		}
+
+		.ss_inserted_div {
+			height:0px;
+			overflow-y:auto;
+		}
+
+		.ss_inserted_div table {
+			width: 100%;
+		}
+
+		.ss_inserted_div table th {
+			font-size:12px;
+		}
+		
+		.ss_inserted_div table td {
+			text-align: center;
+			font-size:12px;
+		}
+
+		.ss_inserted_div table tr {
+			background: gray;
+		}
+
+		.ss_updated_div {
+			height:0px;
+			overflow-y:auto;
+		}
+
+		.ss_updated_div table {
+			width: 100%;
+		}
+
+		.ss_updated_div table th {
+			font-size:12px;
+		}
+
+		.ss_updated_div table td {
+			text-align: center;
+			font-size:12px;
+		}
+
+		.ss_updated_div table tr {
+			background: gray;
+		}
+
+		.pay_inserted_div {
+			height:0px;
+			overflow-y:auto;
+		}
+
+		.pay_inserted_div table {
+			width: 100%;
+		}
+
+		.pay_inserted_div table th {
+			font-size:12px;
+		}
+
+		.pay_inserted_div table td {
+			text-align: center;
+			font-size:12px;
+		}
+
+		.pay_inserted_div table tr {
+			background: gray;
+		}
+
+		.pay_updated_div {
+			height:0px;
+			overflow-y:auto;
+		}
+
+		.pay_updated_div table {
+			width: 100%;
+		}
+
+		.pay_updated_div table th {
+			font-size:12px;
+		}
+
+		.pay_updated_div table td {
+			text-align: center;
+			font-size:12px;
+		}
+
+		.pay_updated_div table tr {
+			background: gray;
+		}
+
+		.opers_list_show_hide {
+			color:red;
+			cursor: pointer;
+		}
+
+		.tel_nom:hover, .clickable:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+
+		#ss_to_db_btn {
+			width: 115px;
+		}
+
+		#downgrade_btn {
+			margin-left: 20px;
+			width: 115px;
+		}

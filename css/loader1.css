@@ -1,0 +1,49 @@
+    /*@import url(https://fonts.googleapis.com/css?family=Oswald);
+    * {
+      box-sizing: border-box;
+    }*/
+
+    .loading2 {
+      position: absolute;
+      z-index: 10;
+      left: 1045px;
+      top: 15px;
+    }
+    .circle {
+      border-radius: 50%;
+      border: 3px #0a0a0a solid;
+      float: left;
+      height: 20px;
+      margin: 0 5px;
+      width: 20px;
+      background: red;
+    }
+      .circle-1 {
+        animation: move 1s ease-in-out infinite;
+      }
+      .circle-1a {
+        animation: fade 1s ease-in-out infinite;
+      }
+      @keyframes fade {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+      }
+      .circle-2 {
+        animation: move 1s ease-in-out infinite;
+      }
+      @keyframes move {
+        0% {transform: translateX(0);}
+        100% {transform: translateX(20px);}
+      }
+      .circle-1a {
+        margin-left: -55px;
+        opacity: 0;
+      }
+      .circle-3 {
+        animation: circle-3 1s ease-in-out infinite;
+        opacity: 1;
+      }
+      @keyframes circle-3 {
+        0% {opacity: 1;}
+        100% {opacity: 0;}
+      }

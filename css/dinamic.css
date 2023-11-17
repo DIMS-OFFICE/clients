@@ -1,0 +1,597 @@
+* {
+	scrollbar-width: thin;
+	scrollbar-color: blue lightgray;
+}
+
+/* для Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+	height: 12px;
+	width: 12px;
+}
+*::-webkit-scrollbar-track {
+	background: lightgrey;
+}
+*::-webkit-scrollbar-thumb {
+	background-color: royalblue;
+	border-radius: 7px;
+	border: 2px solid lightgray;
+}
+
+div.short_text {
+	font-size:11px;
+	text-align:center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 94%;
+}
+
+div.short_text_left_align {
+	font-size:11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 94%;
+}
+
+input, select, textarea {background:yellow; border-radius:5px;}
+
+#dinamic_main_div {width:1398px; overflow-y:auto; border: 1px solid #aaaaaa;}
+
+#dinamic_main_tbl_header th {font-size:12px;}
+#dinamic_main_tbl_header th:nth-child(1) {width:29px;}
+#dinamic_main_tbl_header th:nth-child(2) {width:41px;}
+#dinamic_main_tbl_header th:nth-child(3) {width:96px;}
+#dinamic_main_tbl_header th:nth-child(4) {width:192px;}
+#dinamic_main_tbl_header th:nth-child(5) {width:288px;}
+#dinamic_main_tbl_header th:nth-child(6) {width:68px;}
+#dinamic_main_tbl_header th:nth-child(7) {width:82px;}
+#dinamic_main_tbl_header th:nth-child(8) {width:82px;}
+#dinamic_main_tbl_header th:nth-child(9) {width:400px;}
+#dinamic_main_tbl_header th:nth-child(10) {width:100px;}
+
+#dinamic_main_tbl td {font-size:11px; text-align:center; border:1px solid #bbb!important}
+#dinamic_main_tbl td:nth-child(1) {width:28px;}
+#dinamic_main_tbl td:nth-child(2) {width:41px;}
+#dinamic_main_tbl td:nth-child(5) {width:96px;}
+#dinamic_main_tbl td:nth-child(6) {min-width:192px; max-width:192px;}
+#dinamic_main_tbl td:nth-child(7) {min-width:288px; max-width:288px;}
+#dinamic_main_tbl td:nth-child(8) {width:68px;}
+#dinamic_main_tbl td:nth-child(9) {width:82px;}
+#dinamic_main_tbl td:nth-child(10) {width:82px;}
+#dinamic_main_tbl td:nth-child(11) {width:400px; cursor:pointer;}
+#dinamic_main_tbl td:nth-child(12) {width:100px;}
+#dinamic_main_tbl tr:hover {background-color:rgb(229,227,227);}
+
+.main_name {text-align:left!important;}
+
+#dinamic_main_tbl_header .sort {cursor:pointer;}
+
+.sort span {color:red;}
+
+#details_link:hover {cursor:pointer; text-decoration: underline}
+
+.class_block td {color:grey;}
+.class_block a {color:grey;}
+
+#dinamic_details {margin-left:10px; margin-top:5px;}
+
+#dinamic_details_tbl_header {margin-top:5px;}
+#dinamic_details_tbl_header th {font-size:12px;}
+#dinamic_details_tbl_header th:nth-child(1) {width:101px}
+#dinamic_details_tbl_header th:nth-child(2) {width:100px}
+#dinamic_details_tbl_header th:nth-child(3) {width:100px}
+#dinamic_details_tbl_header th:nth-child(4) {width:100px}
+
+#dinamic_details_tbl {table-layout: fixed;}
+#dinamic_details_tbl td {font-size:11px; text-align:center;}
+#dinamic_details_tbl td:nth-child(1) {width:100px; cursor: pointer}
+#dinamic_details_tbl td:nth-child(2) {width:100px}
+#dinamic_details_tbl td:nth-child(3) {width:100px}
+#dinamic_details_tbl td:nth-child(4) {width:100px; cursor: pointer}
+#dinamic_details_tbl tr:hover {background-color:rgb(229,227,227);}
+#dinamic_details_tbl tbody .calc_from_balance {background:rgb(252,155,28); cursor: pointer;}
+#dinamic_details_tbl tbody .history_date:hover {text-decoration: underline;}
+#dinamic_details_tbl tbody .calc_from_balance:hover {text-decoration: underline;}
+#dinamic_details_tbl tbody .payment_td:hover {text-decoration: underline;}
+
+#monthes_history_tbl_header {margin-top:5px;}
+#monthes_history_tbl_header th {font-size:12px;}
+#monthes_history_tbl_header th:nth-child(1) {width:111px}
+#monthes_history_tbl_header th:nth-child(2) {width:100px}
+#monthes_history_tbl_header th:nth-child(3) {width:100px}
+#monthes_history_tbl_header th:nth-child(4) {width:100px}
+#monthes_history_tbl_header th:nth-child(5) {width:100px}
+#monthes_history_tbl_header th:nth-child(6) {width:100px}
+#monthes_history_tbl_header th:nth-child(7) {width:100px}
+#monthes_history_tbl_header th:nth-child(8) {width:100px}
+#monthes_history_tbl_header th:nth-child(9) {width:100px}
+
+#monthes_history_tbl {table-layout: fixed;}
+#monthes_history_tbl td {font-size:11px; text-align:center;}
+#monthes_history_tbl td:nth-child(1) {width:110px}
+#monthes_history_tbl td:nth-child(2) {width:100px}
+#monthes_history_tbl td:nth-child(3) {width:100px; cursor: pointer;}
+#monthes_history_tbl td:nth-child(4) {width:100px; cursor: pointer;}
+#monthes_history_tbl td:nth-child(5) {width:100px; cursor: pointer;}
+#monthes_history_tbl td:nth-child(6) {width:100px}
+#monthes_history_tbl td:nth-child(7) {width:100px}
+#monthes_history_tbl td:nth-child(8) {width:100px}
+#monthes_history_tbl td:nth-child(9) {width:100px}
+#monthes_history_tbl tr:hover {background-color:rgb(229,227,227);}
+
+#detal_last_time {font-size:10px; font-style:italic; width:1355px; text-align:right;}
+
+#calls_list_header {width: 1383px; margin-top:5px;}
+#calls_list_header th {font-size:10px;}
+
+#calls_list {
+	width: 1383px;
+    table-layout: fixed;
+}
+
+#calls_list tr {cursor:pointer;}
+#calls_list tr:hover {background-color:rgb(229,227,227);}
+#calls_list td {font-size:11px; text-align:center;}
+
+#client_services_tbl_header {margin-top:5px; margin-left:5px;}
+#client_services_tbl_header th {font-size:12px;}
+
+#client_services_tbl_header th:nth-child(1) {width:185px;}
+#client_services_tbl_header th:nth-child(2) {width:81px;}
+#client_services_tbl_header th:nth-child(3) {width:70px;}
+#client_services_tbl_header th:nth-child(4) {width:50px;}
+#client_services_tbl_header th:nth-child(5) {width:76px;}
+
+#client_services_tbl td {font-size:11px; text-align:center;}
+
+#client_services_tbl td:nth-child(1) {width:184px;}
+#client_services_tbl td:nth-child(2) {width:81px;}
+#client_services_tbl td:nth-child(3) {width:70px;}
+#client_services_tbl td:nth-child(4) {width:50px;}
+#client_services_tbl td:nth-child(5) {width:75px;}
+#client_services_tbl .kef {cursor:pointer;}
+
+#detal_totals_header {margin-left:5px; margin-top:5px;}
+#detal_totals_header th {font-size:12px; text-align:center;}
+#detal_totals_header th:nth-child(1) {width:29px;}
+#detal_totals_header th:nth-child(2) {width:145px;}
+#detal_totals_header th:nth-child(3) {width:144px;}
+#detal_totals_header th:nth-child(4) {width:144px;}
+
+#detal_totals {width:462px;}
+#detal_totals td {font-size:11px; text-align:center;}
+#detal_totals td:nth-child(1) {width:30px;}
+#detal_totals td:nth-child(2) {width:145px;}
+#detal_totals td:nth-child(3) {width:145px;}
+#detal_totals td:nth-child(4) {width:145px;}
+
+#roaming_settings_header {font-size:12px}
+#roaming_settings_header th:nth-child(1) {width:227px;}
+#roaming_settings_header th:nth-child(2) {width:126px;}
+#roaming_settings_header th:nth-child(3) {width:100px;}
+
+#monthes_totals_rests_div .tbl_header {margin-left:5px; font-size:13px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(1) {width:65px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(2) {width:213px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(3) {width:55px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(4) {width:50px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(5) {width:50px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(6) {width:50px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(7) {width:50px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(8) {width:50px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(9) {width:85px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(10) {width:85px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(11) {width:85px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(12) {width:85px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(13) {width:80px;}
+
+#monthes_totals_rests_div .tbl_body {margin-left:5px; font-size:13px;}
+#monthes_totals_rests_div .tbl_body td:nth-child(1) {width:65px; color: white; text-align: center}
+#monthes_totals_rests_div .tbl_body td:nth-child(2) {width:213px; color: white; text-align: center}
+#monthes_totals_rests_div .tbl_body td:nth-child(3) {width:55px; color: white; text-align: center}
+#monthes_totals_rests_div .tbl_body td:nth-child(4) {width:50px; color: white; text-align: center}
+#monthes_totals_rests_div .tbl_body td:nth-child(5) {width:50px; color: white; text-align: center}
+#monthes_totals_rests_div .tbl_body td:nth-child(6) {width:50px; color: white; text-align: center}
+#monthes_totals_rests_div .tbl_body td:nth-child(7) {width:50px; color: white; text-align: center}
+#monthes_totals_rests_div .tbl_body td:nth-child(8) {width:50px; color: white; text-align: center}
+#monthes_totals_rests_div .tbl_body td:nth-child(9) {width:85px; color: white; text-align: center}
+#monthes_totals_rests_div .tbl_body td:nth-child(10) {width:85px; color: white; text-align: center}
+#monthes_totals_rests_div .tbl_body td:nth-child(11) {width:85px; color: white; text-align: center}
+#monthes_totals_rests_div .tbl_body td:nth-child(12) {width:85px; color: white; text-align: center}
+#monthes_totals_rests_div .tbl_body td:nth-child(13) {width:80px; color: white; text-align: center}
+
+#roaming_settings_tbl td {font-size:14px}
+
+#color_picker {position:absolute; z-index:1000; width:300px; height:285px; box-shadow:5px 5px; display:none;}
+
+.changes_update {
+	animation-name: spin;
+    animation-duration: 1200ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+	from {
+	    transform:rotate(0deg);
+	}
+	to {
+	    transform:rotate(-360deg);
+	}
+}
+
+#main_tbl td {border:0px;}
+
+#scroll_btn {position:absolute; z-index:1000; border-radius:10px; left:57px; top:130px; width:38px; background:black; opacity:0.4; cursor:pointer; display:none;}
+#scroll_down_btn {position:absolute; z-index:1000; border-radius:10px; left:57px; width:38px; background:black; opacity:0.4; cursor:pointer; display:none;}
+
+#sort_form_service {position:fixed; display:none; cursor:pointer; left:-55px; top:200px; z-index:1000; border-radius:10px; width:400px; margin-left:40%; margin-top:0%; height:70px; background:black; opacity:0; padding-top:3px;}
+#sort_form_service td {border:none; text-align:center; color:white; font-weight:bold;}
+
+#sort_form {position:fixed; display:none; cursor:pointer; left:-55px; top:200px; z-index:1000; border-radius:10px; width:400px; margin-left:40%; margin-top:0%; height:70px; background:black; opacity:0; padding-top:3px;}
+#sort_form td {border:none; text-align:center; color:white; font-weight:bold;}
+
+div.ui-datepicker {
+	font-size:10px;
+}
+
+#alert_dialog .ui-datepicker {
+	width:230px;
+}
+
+#no_attentions_div .ui-datepicker {
+	width:205px;
+}
+
+.ui-datepicker table {
+	font-size:0.7em;
+}
+.ui-widget .ui-widget {
+	font-size:0.7em;
+}
+
+.multiselect {
+	background:yellow!important;
+	font-size:12px!important;
+	height:23px!important;
+	border-radius:8px!important;
+	border:1px solid grey!important;
+	padding:0px 0px!important;
+	margin-top:-3px!important;
+	width:200px!important;
+}
+
+#dinamic_details_header {font-size:14px; text-align:left; width:100%;}
+
+.multiselect-search {
+	font-size:12px!important;
+	height:26px!important;
+	border-radius:8px!important;
+	border:1px solid grey!important;
+	width:170px!important;
+}
+
+.dropdown-menu li {
+	font-size:12px;
+	margin-top:-2px!important;
+}
+
+.ui-tabs-nav li {left:70px;}
+
+#roaming_td table {margin-left:10px;}
+#roaming_td table th {font-size:12px;}
+
+#roaming_in_img {display:none;}
+#roaming_out_img {display:none;}
+#roaming_in_disabled_img {display:none;}
+#roaming_out_disabled_img {display:none;}
+
+#roaming_tbl th:hover {cursor:pointer}
+
+.edit_spended:hover {cursor:pointer; text-decoration:underline}
+
+#service_on_off_form tr:hover {background-color:rgb(209, 209, 209);}
+
+#attention_reason {width:100%; font-size: 14px; text-align:center; font-weight:bold; color:red; cursor:pointer}
+#attention_reason:hover {text-decoration: underline}
+
+#call_types_tbl th:nth-child(1) {width:60px; font-size:12px;}
+#call_types_tbl th:nth-child(2) {width:60px; font-size:12px;}
+#call_types_tbl th:nth-child(3) {width:150px; font-size:12px;}
+#call_types_tbl th:nth-child(4) {width:150px; font-size:12px;}
+#call_types_tbl td:nth-child(1) {text-align:center;}
+#call_types_tbl td:nth-child(4) {text-align:center;}
+#call_types_tbl td:nth-child(5) {width:93px;}
+#call_types_tbl td:nth-child(6) {width:93px;}
+#call_types_tbl td:nth-child(7) {width:93px;}
+#call_types_tbl td {font-size:11px;}
+#call_types_tbl button {width: 83px;}
+
+.msg {color:red; font-size:12px; font-weight:bold;}
+
+#services_settings_div input {width:120px; text-align:center;}
+#services_settings_div table th:nth-child(1) {width:60px; font-size:12px;}
+#services_settings_div table th:nth-child(2) {width:60px; font-size:12px; text-align: center;}
+#services_settings_div table th:nth-child(3) {width:60px; font-size:12px; text-align: center;}
+#services_settings_div table th:nth-child(4) {width:250px; font-size:12px;}
+#services_settings_div table th:nth-child(5) {width:70px; font-size:12px; text-align:center;}
+#services_settings_div table th:nth-child(6) {width:150px; font-size:12px; text-align:center;}
+#services_settings_div table th:nth-child(7) {width:100px;}
+#services_settings_div table td {font-size:11px; text-align: center;}
+#services_settings_div .periodic {width: 60px}
+
+.legend_sort {cursor:pointer;}
+
+#services_settings_div table tr:hover{background-color:rgb(229,227,227);}
+
+#services_settings_div button {width:90px;}
+
+#spended_details_tbl {margin-top:5px; margin: 0 auto; width: 90%}
+#spended_details_tbl th:nth-child(1) {width:200px;}
+#spended_details_tbl th:nth-child(2) {width:100px;}
+#spended_details_tbl th:nth-child(3) {width:100px;}
+#spended_details_tbl th:nth-child(4) {width:100px;}
+#spended_details_tbl th {font-size:12px;}
+#spended_details_tbl td:nth-child(2) {text-align:center;}
+#spended_details_tbl td:nth-child(3) {text-align:center;}
+#spended_details_tbl td:nth-child(4) {text-align:center;}
+#spended_details_tbl td {font-size:15px; color: white;}
+
+#services_history {width:600px}
+#services_history table {width:90%; margin:0 auto}
+#services_history table td {text-align: center}
+#services_history table td:nth-child(2) {width:18%}
+#services_history table td:nth-child(3) {width:18%}
+#services_history table td:nth-child(4) {width:18%}
+#services_history table td:nth-child(5) {width:18%}
+#services_history td {color: white; font-weight: bold}
+
+#exceptions_tbl th {font-size: 12px}
+#exceptions_tbl td {font-size: 14px}
+#exceptions_tbl td {text-align: center}
+#exceptions_tbl td:nth-child(1) {width:200px}
+#exceptions_tbl td:nth-child(2) {width:200px}
+#exceptions_tbl td:nth-child(3) {width:400px}
+
+.rotate {
+	animation-name: spin;
+    animation-duration: 1200ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+	from {
+	    transform:rotate(0deg);
+	}
+	to {
+	    transform:rotate(-360deg);
+	}
+}
+
+.month_down, .month_up {
+	font-weight:bold;
+	color:red;
+	cursor:pointer;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.period_month_down, .period_month_up, .calc_month_down, .calc_month_up {
+	margin-right: 10px;
+    margin-left: 10px;
+	font-weight:bold;
+	color:red;
+	cursor:pointer;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#sort_form_service {position:fixed; display:none; cursor:pointer; left:-55px; top:200px; z-index:1000; border-radius:10px; width:400px; margin-left:40%; margin-top:0%; height:70px; background:black; opacity:0; padding-top:3px;}
+#sort_form_service td {border:none; text-align:center; color:white; font-weight:bold;}
+
+#call_type_history {width: 515px; margin-left: 5px}
+#call_type_history th {font-size: 12px}
+#call_type_history td {font-size: 14px; text-align: center}
+#call_type_history td:nth-child(1) {width:160px; color: white; cursor:pointer}
+#call_type_history td:nth-child(2) {width:160px; color: white; cursor:pointer}
+#call_type_history td:nth-child(3) {width:100px;}
+#call_type_history button {width: 83px;}
+
+#call_type_history_form input {
+	width: 100;
+    color: black;
+    text-align: center;
+}
+
+#service_history {width: 515px; margin-left: 5px}
+#service_history th {font-size: 12px}
+#service_history td {font-size: 14px; text-align: center}
+#service_history td:nth-child(1) {width:160px; color: white; cursor:pointer}
+#service_history td:nth-child(2) {width:160px; color: white; cursor:pointer}
+#service_history td:nth-child(3) {width:100px;}
+#service_history button {width: 83px;}
+
+#services_settings_div .phones_count {cursor: pointer}
+#services_settings_div .phones_count:hover {text-decoration: underline}
+
+#alert_dialog table td {
+    font-size: 11px;
+    border: 1px solid gray;
+}
+
+.edit {background: #f28b86!important}
+.red {background: #f28b86!important}
+.green {background: #96f28f!important}
+
+#monthes_totals_rests_div .tbl_header {margin-left:5px; font-size:13px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(1) {width:65px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(2) {width:213px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(3) {width:55px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(4) {width:50px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(5) {width:50px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(6) {width:50px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(7) {width:50px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(8) {width:50px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(9) {width:85px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(10) {width:85px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(11) {width:85px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(12) {width:85px;}
+#monthes_totals_rests_div .tbl_header th:nth-child(13) {width:80px;}
+
+#monthes_totals_rests_div .tbl_body {margin-left:5px; font-size:13px;}
+#monthes_totals_rests_div .tbl_body td:nth-child(1) {width:65px;}
+#monthes_totals_rests_div .tbl_body td:nth-child(2) {width:213px;}
+#monthes_totals_rests_div .tbl_body td:nth-child(3) {width:55px;}
+#monthes_totals_rests_div .tbl_body td:nth-child(4) {width:50px;}
+#monthes_totals_rests_div .tbl_body td:nth-child(5) {width:50px;}
+#monthes_totals_rests_div .tbl_body td:nth-child(6) {width:50px;}
+#monthes_totals_rests_div .tbl_body td:nth-child(7) {width:50px;}
+#monthes_totals_rests_div .tbl_body td:nth-child(8) {width:50px;}
+#monthes_totals_rests_div .tbl_body td:nth-child(9) {width:85px;}
+#monthes_totals_rests_div .tbl_body td:nth-child(10) {width:85px;}
+#monthes_totals_rests_div .tbl_body td:nth-child(11) {width:85px;}
+#monthes_totals_rests_div .tbl_body td:nth-child(12) {width:85px;}
+#monthes_totals_rests_div .tbl_body td:nth-child(13) {width:80px;}
+
+#monthes_totals_rests_div tr {height:19px;}
+#monthes_totals_rests_div .tbl_body td {color:gainsboro; text-align:center;}
+#monthes_totals_rests_div .tbl_body tr:hover {background-color:rgb(0, 0, 0);}
+
+.clickable {
+	cursor:pointer;
+}
+
+.clickable:hover {
+	text-decoration: underline;
+}
+
+#monthes_totals_rests_div .checked {background-color:red;}
+#monthes_totals_rests_div .bold {font-weight:bold; color: white!important}
+
+.comments_tbl {
+    margin: 0 auto;
+    width: 760px;
+    font-size: 11px;
+}
+
+#payment_form th {font-size: 12px; text-align: center}
+#payment_form td {font-size: 13px; text-align: center}
+
+#alert_dialog .tel_nom:hover {
+	cursor: pointer;
+    text-decoration: underline;
+}
+
+#tel_nom_input {
+	width:170px; 
+	font-size:14px; 
+	height:22px; 
+	text-align:center; 
+	background:yellow; 
+	border:1px solid gray; 
+	border-radius: 8px; 
+	height:23px;
+}
+
+#number_status {
+	width:130px; 
+	font-size:14px; 
+	height:22px; 
+	text-align:center; 
+	background:yellow; 
+	border:1px solid gray; 
+	border-radius: 8px; height:23px;
+}
+
+#monthes_select {
+	position: absolute;
+	width: 160px;
+	height: 420px;
+	background: gray;
+	color: white;
+	border: 2px solid black;
+	border-radius: 5px;
+	overflow-y: auto;
+}
+
+#monthes_select .option:hover {
+	cursor: pointer;
+	background: black;
+}
+
+#monthes_select .all_year {
+	font-weight: bold;
+}
+
+#to_office div {
+    background: palegreen;
+    height: 37px;
+    padding-top: 9px;
+    font-weight: normal;
+    color: #555555;
+    border-radius: 4px 4px 0px 0px;
+    cursor: pointer;
+}
+
+#stats_tbl_thead th {font-size:12px}
+#stats_tbl_thead th:nth-child(1) {width:30px;}
+#stats_tbl_thead th:nth-child(2) {width:100px}
+#stats_tbl_thead th:nth-child(3) {width:130px}
+#stats_tbl_thead th:nth-child(4) {width:130px}
+
+#stats_tbl {width:390px}
+#stats_tbl td {font-size:13px; color:white; text-align:center}
+#stats_tbl td:nth-child(1) {width:30px;}
+#stats_tbl td:nth-child(2) {width:100px; cursor:pointer}
+#stats_tbl td:nth-child(3) {width:130px}
+#stats_tbl td:nth-child(4) {width:130px}
+#stats_tbl tr:hover {background-color:rgb(0, 0, 0);}
+
+#stats_tbl_1s_thead th {font-size:12px}
+#stats_tbl_1s_thead th:nth-child(1) {width:30px;}
+#stats_tbl_1s_thead th:nth-child(2) {width:100px}
+#stats_tbl_1s_thead th:nth-child(3) {width:85px}
+#stats_tbl_1s_thead th:nth-child(4) {width:85px}
+#stats_tbl_1s_thead th:nth-child(5) {width:85px}
+#stats_tbl_1s_thead th:nth-child(6) {width:85px}
+
+#stats_tbl_1s td {font-size:13px; color:white; text-align:center}
+#stats_tbl_1s td:nth-child(1) {width:30px;}
+#stats_tbl_1s td:nth-child(2) {width:100px; cursor:pointer}
+#stats_tbl_1s td:nth-child(3) {width:85px}
+#stats_tbl_1s td:nth-child(4) {width:85px}
+#stats_tbl_1s td:nth-child(5) {width:85px}
+#stats_tbl_1s td:nth-child(6) {width:85px}
+#stats_tbl_1s tr:hover {background-color:rgb(0, 0, 0);}
+
+#stats_div .total_spended_diff {
+	font-weight:bold;
+	color: black;
+	text-align: center;
+	background: yellow;
+    width: 125px;
+    margin-left: 10px;
+    border:1px solid black;
+	height: 30px;
+    padding-top: 5px;    
+}
+
+#total_benefit {
+	font-weight: bold;
+	background: aliceblue;
+	-webkit-box-shadow: 0px 0px 6px 7px rgba(17, 231, 14, 0.2);
+	-moz-box-shadow: 0px 0px 6px 7px rgba(17, 231, 14, 0.2);
+	box-shadow: 0px 0px 6px 7px rgba(17, 231, 14, 0.2);
+}
+
+#call_period_form .phones_for_change_period {margin: 0 auto;}
+#call_period_form .phones_for_change_period td {
+	text-align:center; 
+	color:white;
+	padding-left: 5px;
+    padding-right: 10px;
+}
